@@ -27,5 +27,6 @@ const users = [
 // let new_users = users.filter((user) =>user.username === "Adele").map((user) => user.username)
 // console.log(new_users)
 
-let new_users = users.sort((a,b)=> (a.id>b.id ? -1:1)).filter((user)=> !user.isActive).map((user)=> [user.username, user.id])
-console.log(...new_users)
+let new_users = users.sort((a,b)=> (a.id>b.id ? -1:1)).filter((user)=> user.isActive).map((user)=> [user.username, user.id])
+console.log(new_users)
+console.log(+"a")

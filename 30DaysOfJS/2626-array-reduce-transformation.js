@@ -28,14 +28,20 @@
 // The final answer is 10.
 
 let nums = [1,2,3,4]
-let fn = function sum(accum, curr){
+function sum(accum, curr){
     return accum + curr
 }
-function soultion(fn, nums, init ){
-    for(i of nums){
-        init = fn(init, i)
-    }
-    console.log(init)
+// function soultion(fn, nums, init ){
+//     for(i of nums){
+//         init = fn(init, i)
+//     }
+//     console.log(init)
+// }
+
+// soultion(fn, nums, 0)f
+function solution(fn){
+    return nums.reduce((acc, element)=> acc=fn(acc, element), 0)
 }
 
-soultion(fn, nums, 0)
+console.log(solution(sum))
+console.log("a")
